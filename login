@@ -21,6 +21,37 @@ nc="\e[0m"
 red='\e[1;31m'
 yellow='\e[1;33m'
 clear
+tampan(){
+    clear
+echo -e $red "MENGHUBUNGKAN..."
+sleep 0.25
+clear
+echo -e $blue "MENGHUBUNGKAN..."
+sleep 0.25
+clear
+echo -e $red "MENGHUBUNGKAN..."
+sleep 0.25
+clear
+echo -e $blue "MENGHUBUNGKAN..."
+sleep 0.25
+clear
+echo -e $red "MENGHUBUNGKAN..."
+sleep 0.25 
+clear       
+ echo -e "  ______                    _             __" | lolcat
+ sleep 0.25
+ echo -e " /_  __/__  _________ ___  (_)___  ____ _/ / " | lolcat
+ sleep 0.25
+ echo -e "  / / / _ \/ ___/ __ \__ \/ / __ \/ __ \/ / " | lolcat
+ sleep 0.25
+ echo -e " / / /  __/ /  / / / / / / / / / / /_/ / /  " | lolcat
+ sleep 0.25
+ echo -e "/_/  \___/_/  /_/ /_/ /_/_/_/ /_/\__,_/_/   " | lolcat
+      sleep 0.25
+                                           
+
+
+}
 #tulisan Unfaedah
 faedah(){
     echo -e "  ___      _           _         _                 _  "  | lolcat   
@@ -47,7 +78,7 @@ user(){
     if [ $name = "Tampansky" ]; then
        pass
        else
-       echo $red "Tidak Bisa/Salah"
+       echo -e $red "Tidak Bisa/Salah"
     fi 
 }
 pass(){
@@ -55,11 +86,10 @@ pass(){
     echo -e $cyan "Massukan $blue Password !!!" 
     read -p "PasSword :" ss
     if [ $ss = "assywarni" ];then
-     user
+     tampan
      else
-     echo $red "Tidak Bisa/Salah"
+     echo -e $red "Tidak Bisa/Salah"
      fi
 }
-
-user 
-
+sleep 1
+user

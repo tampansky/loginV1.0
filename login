@@ -1,8 +1,12 @@
-#!/bin/sh
-##########################
-##  Admin Login         ##
-##########################
-#colors
+clear
+# Udah di pisahin
+gr='\033[92m'
+bl='\e[1;34m'
+cy='\e[0;36m' 
+wh='\e[1;37m'
+yl="\033[1;33m"
+rd='\e[1;31m'
+# Belum
 blue='\e[1;34m'
 cyan='\e[0;36m'
 green='\e[0;34m'
@@ -20,6 +24,15 @@ white='\e[1;37m'
 nc="\e[0m"
 red='\e[1;31m'
 yellow='\e[1;33m'
+# AWKOAKWO 
+
+
+n=1
+while [ $n -le 100 ]
+do
+       echo "loading $n%"
+       (( n++ ))
+done
 clear
 tampan(){
     clear
@@ -48,33 +61,23 @@ clear
  sleep 0.25
  echo -e "/_/  \___/_/  /_/ /_/ /_/_/_/ /_/\__,_/_/   " | lolcat
       sleep 0.25
-                                           
-
-
+                                          
 }
-#tulisan Unfaedah
-faedah(){
-    echo -e "  ___      _           _         _                 _  "  | lolcat   
-    sleep 0.25
-    echo -e " / _ \    | |         (_)       | |               (_)  "  | lolcat  
-    sleep 0.25
-    echo -e "/ /_\ \ __| |_ __ ___  _ _ __   | |     ___   __ _ _ _ __ "  | lolcat 
-    sleep 0.25
-    echo -e "|  _  |/ _| | |_ \ _ \| | |_ \  | |    / _ \ / _\ | | '_ \ "  | lolcat
-    sleep 0.25
-    echo -e "| | | | (_| | | | | | | | | | | | |___| (_) | (_| | | | | | "  | lolcat
-    sleep 0.25
-    echo -e "\_| |_/\__,_|_| |_| |_|_|_| |_| \_____/\___/ \__, |_|_| |_| "  | lolcat
-    sleep 0.25
-    echo -e "                                              __/ |        "  | lolcat
-     sleep 0.25
-    echo -e "                                             |___/         "  | lolcat
-}
+
 user(){
+printf "
+  ╔══════════════〉〉〉〉≛〈〈〈〈══════════════╗ 
+           __             _       
+          / /  ___   __ _(_)_ __  
+         / /  / _ \ / _\ | | \_ \ 
+        / /__| (_) | (_| | | | | |
+        \____/\___/ \__, |_|_| |_|
+                    |___/         
+  ╚══════════════〉〉〉〉≛〈〈〈〈══════════════╝ 
+" | lolcat
     sleep 0.25
-    faedah
     echo -e $blue "Masukan $cyan Username !!!"
-    read -p "USER :" name
+    read -p "[username] :" name
     if [ $name = "Tampansky" ]; then
        pass
        else
@@ -84,8 +87,8 @@ user(){
 pass(){
     sleep 0.25
     echo -e $cyan "Massukan $blue Password !!!" 
-    read -p "PasSword :" ss
-    if [ $ss = "assywarni" ];then
+    read -p "[password] :" ss
+    if [ $ss = "sys30" ];then
      tampan
      else
      echo -e $red "Tidak Bisa/Salah"
